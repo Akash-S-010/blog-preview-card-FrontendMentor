@@ -44,7 +44,8 @@ body {
 }
 
 .tag {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     display: inline-block;
     background-color: hsl(47, 88%, 63%);
     color: black;
@@ -56,15 +57,20 @@ body {
 
 .publish-date {
     font-size: 14px;
-    color: hsl(0, 0%, 42%);
+    color: hsl(0, 1%, 23%);
     margin-top: 8px;
 }
 
 .title {
     font-size: 18px;
-    font-weight: bold;
-    margin: 8px 0;
+    font-weight: 800;
+    margin: 15px 0;
     color: hsl(0, 0%, 7%);
+    transition: .3s;
+    cursor: pointer;
+}
+.title:hover{
+    color:hsl(47, 88%, 63%) ;
 }
 
 .description {
@@ -75,13 +81,14 @@ body {
 
 /* Author Section */
 .author {
+    margin-top: 20px;
     display: flex;
     align-items: center;
 }
 
 .author-img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     margin-right: 8px;
 }
@@ -89,6 +96,12 @@ body {
 .author-name {
     font-size: 14px;
     color: hsl(0, 0%, 7%);
+    font-weight: 700;
+}
+.attribution{
+    position: absolute;
+    bottom: 80px;
+    font-size: 10px;
 }
 
 @media (max-width: 375px) {
